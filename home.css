@@ -6,3 +6,13 @@ body {
     background-size: cover;
     background-position: center;
 }
+
+.box {
+    background-color: #ff3300;
+    width: 50%;
+    
+    margin: 15% auto;
+    position: relative;
+    text-align: center;
+    font-size: 4vw;
+}
