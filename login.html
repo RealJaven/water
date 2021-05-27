@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Login Form
+    </title>
+    <link rel='stylesheet' type='text/css' href='login_style.css'></link>
+    <script>
+        function check_value(val)
+        {
+            let username = document.getElementById("username_login").value
+            let password = document.getElementById("password_login").value
+            
+            if (sessionStorage.getItem(username) == password){
+                alert('Login succeed!')
+                window.location.href = 'new.html'
+                //return false // html requires this to redirect
+            }
+            else{
+                // TODO alert box
+                alert('Login failed')
+            }
+        }
+
+        function store_value(val)
+        {
+            let username = document.getElementById("username_register").value
+            let password = document.getElementById("password_register").value
+            if (verification(username)){
+                sessionStorage.setItem(username, password)
+                alert('Registration succeed!')
+                redirect_to_login()
+            }
+            else{
+                // TODO alert box
+                alert('Username already registered')
+            }
+        }
+
+        function verification(username){
+            if (sessionStorage.getItem(username)){
+                return false // username already registered
+            }
+            else{
+                return true // valid username
+            }
+        }
+
+        function redirect_to_login(val){
+            document.getElementById("registerbox").style.display = 'none'
+            document.getElementById("loginbox").style.display = 'block'
+        }
+
+        function redirect_to_register(val){
+            document.getElementById("registerbox").style.display = 'block'
+            document.getElementById("loginbox").style.display = 'none'
+        }
+
+     </script>
+</head>
+
+<body>
+    <div class='loginbox' id='loginbox' style="display: visible;">
+        <h1 class='login_header'>Log in to UniThirstQ</h1>
+        <form>
+            <p>User Name</p>
+            <Input type='text' name='username' class='login_username' id='username_login' placeholder="Your username here">
+            <p>Password</p>
+            <input type='password' name='password' class='login_password' id='password_login' placeholder="Your password here">
+            <input type='submit' name='submit_button' class='login_submit' value="Login" onclick="check_value();return false;">
+            <a href='#' class='login_redirect' onclick="redirect_to_register()">Register here!</a>
+        </form>
+    </div>
+
+    <div class='registerbox' id='registerbox' style="display: none;">
+        <h1 class='login_header'>Register to UniThirstQ</h1>
+        <form>
+            <p>User Name</p>
+            <Input type='text' name='username' id='username_register' class='login_username' placeholder="Your username here">
+            <p>Password</p>
+            <input type='password' name='password' id='password_register' class='login_password' placeholder="Your password here">
+            <input type='submit' name='submit_button' class='login_submit' value="Register" onclick="store_value()">
+            <a href='#' class='login_redirect' onclick="redirect_to_login()">Login here!</a>
+        </form>
+    </div>
+
+</body>
+</html>
