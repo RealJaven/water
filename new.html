@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    margin:0;
+    background-image: "./back.jpg";
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #ff3300;
+}
+    
+</style>
+</head>
+<body>
+
+<ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li style="float:right"><a href="#signin">Sign in</a></li>
+    <li style="float:right"><a href="#downloadmap">Download map</a></li>
+</ul>
+
+
+
+</body>
+</html>
