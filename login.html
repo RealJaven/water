@@ -5,6 +5,7 @@
         Login Form
     </title>
     <link rel='stylesheet' type='text/css' href='login_style.css'></link>
+    <link rel='stylesheet' type='text/css' href='nvbar.css'></link>
     <script>
         function check_value(val)
         {
@@ -60,6 +61,12 @@
 </head>
 
 <body>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li style="float:right"><a class="active" href="login.html">Sign in</a></li>
+        <li style="float:right"><a href="#downloadmap">Download map</a></li>
+    </ul>
+    
     <div class='loginbox' id='loginbox' style="display: visible;">
         <h1 class='login_header'>Log in to UniThirstQ</h1>
         <form>
