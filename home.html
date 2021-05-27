@@ -3,13 +3,18 @@
     <head>
         <link rel='stylesheet' type='text/css' href='home.css'></link>
         <link rel='stylesheet' type='text/css' href='nvbar.css'></link>
+        <script>
+            function downloadmap(){
+                alert('Map downloaded!')
+            }
+        </script>
     </head>
     <body>
 
         <ul>
             <li><a class="active" href="home.html">Home</a></li>
             <li style="float:right"><a href="login.html">Sign in</a></li>
-            <li style="float:right"><a href="#downloadmap">Download map</a></li>
+            <li style="float:right"><a href="#" onclick="downloadmap()">Download map</a></li>
         </ul>
         
         <div class="box">
