@@ -11,25 +11,65 @@ body {
     background-color: #ff330055;
     width: 50%;
     height: auto;
-    
-    margin: 15% auto;
-    position: relative;
+    top: 30%;
+    left: 50%;
+    position: absolute;
     text-align: center;
     font-family: cursive;
-    font-size: 5vw;
+    font-size: 7vw;
+    transform: translate(-50%, -50%);
 }
 
-.button {
+.button1 {
     background-color: #eb4a00;
-    width: 20%;
-    margin: 15% auto;
-    position: relative;
+    border-radius: 15px;
     text-align: center;
     font-size: 1.5vw;
     text-decoration: none;
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    width: 20%;
+    transform: translate(-50%, -50%);
 }
 
-.button:hover{
+.button2 {
+    background-color: #eb4a00;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.5vw;
+    text-decoration: none;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.button3 {
+    background-color: #eb4a00;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.5vw;
+    text-decoration: none;
+    position: absolute;
+    top: 70%;
+    left: 75%;
+    width: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.button1:hover{
+    cursor: pointer;
+    background: #ffc107;
+}
+
+.button2:hover{
+    cursor: pointer;
+    background: #ffc107;
+}
+
+.button3:hover{
     cursor: pointer;
     background: #ffc107;
 }
