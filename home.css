@@ -8,11 +8,28 @@ body {
 }
 
 .box {
-    background-color: #ff3300;
+    background-color: #ff330055;
     width: 50%;
+    height: auto;
     
     margin: 15% auto;
     position: relative;
     text-align: center;
-    font-size: 4vw;
+    font-family: cursive;
+    font-size: 5vw;
+}
+
+.button {
+    background-color: #eb4a00;
+    width: 20%;
+    margin: 15% auto;
+    position: relative;
+    text-align: center;
+    font-size: 1.5vw;
+    text-decoration: none;
+}
+
+.button:hover{
+    cursor: pointer;
+    background: #ffc107;
 }
