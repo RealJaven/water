@@ -24,8 +24,15 @@
     }
 
     function close_commentbox(val){
-        document.getElementById("commentbox").style.display = 'none'
-        alert('Your comment has been recorded!')
+        if (!sessionStorage.getItem('login_flag')){
+            document.getElementById("commentbox").style.display = 'none'
+            alert("You haven't logged in yet!")
+        }
+        else {
+            document.getElementById("commentbox").style.display = 'none'
+            alert('Your comment has been recorded!')
+        }
+        
     }
 
     function dynamic_change(val){
