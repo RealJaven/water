@@ -1,0 +1,42 @@
+body {
+    margin:0;
+    background-image: url("./back.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    background-position: center;
+}  
+
+main{
+    float:left;
+    left: 50%;
+    width: 50%;
+    top: 10%;
+    position: absolute;
+    transform: translate(-50%);
+    background-color: rgba(230,71,39,.95);
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+h2{
+    text-align: center;
+    font-size: 25px;
+}
+
+p{
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.Box{
+    border: 10px solid black;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 1%;
+    
+}

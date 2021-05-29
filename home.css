@@ -8,10 +8,10 @@ body {
 }
 
 .box {
-    background-color: #ff330055;
+    background-color: #ff330099;
     width: 50%;
     height: auto;
-    top: 30%;
+    top: 35%;
     left: 50%;
     position: absolute;
     text-align: center;
