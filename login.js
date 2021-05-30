@@ -7,7 +7,6 @@ function check_value(val)
         sessionStorage.setItem('login_flag', 1)
         alert('Login succeed!')
         window.location.href = 'home.html'
-        //return false // html requires this to redirect
     }
     else{
         // TODO alert box
