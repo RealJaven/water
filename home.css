@@ -46,17 +46,17 @@ button {
     left: 75%;
 }
 
-.button1:hover{
+.button1:hover {
     cursor: pointer;
     background: #ffc107;
 }
 
-.button2:hover{
+.button2:hover {
     cursor: pointer;
     background: #ffc107;
 }
 
-.button3:hover{
+.button3:hover {
     cursor: pointer;
     background: #ffc107;
 }
