@@ -2,19 +2,39 @@
 <html> 
     <head>
         <link rel="stylesheet" href="nvbar.css">
-        <link rel="stylesheet" href="about_us.css">
+        <link rel="stylesheet" href="site_map.css">
         <script src="utils.js"></script>
     </head>
     <body>
-        <ul>
+        <ul class="header">
             <li><a href="home.html">Home</a></li>
             <li style="float:right"><a href="login.html">Sign in</a></li>
             <li style="float:right"><a href="" onclick="check_log_out()">Sign out</a></li>
-            <li style="float:right"><a class="active" href="about_us.html">About us</a></li>
+            <li style="float:right"><a href="about_us.html">About us</a></li>
         </ul>
         <main>
             <h1>UniThirstQ Site Map</h1>
-            <p><a href="home.html">Home</a></p>
+            <ul class="map_list">
+                <li><a href="home.html">Home</a></li>
+                <ul>
+                    <li><a href='b_map.html'>Find neady bubblers</a></li>
+                    <li><a href='vcr_map.html'>Find nearby vending machines/cafés/restaurants</a></li>
+                    <li><a href='all_map.html'>Find all drinking facilities</a></li>
+                </ul>
+                <li><a href="login.html">Sign in</a></li>
+                <ul>
+                    <li><a href="login.html">Sign in</a></li>
+                    <li><a href="login.html">Register</a></li>
+                </ul>
+                <li><a href="about_us.html">About us</a></li>
+                <ul>
+                    <li><a href="about_us.html">Crew</a></li>
+                    <li><a href="about_us.html">Helpdesk/FAQ</a></li>
+                    <li><a href="about_us.html">Contect us</a></li>
+                    <li><a href="about_us.html">Privacy policy</a></li>
+                    <li><a href="site_map.html">Site map</a></li>
+                </ul>
+            </ul>
         </main>
 
     </body>

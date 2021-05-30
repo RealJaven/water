@@ -8,7 +8,7 @@ body {
 }
 
 .box {
-    background-color: #ff330099;
+    background-color: rgba(230,71,39,.95);
     width: 50%;
     height: auto;
     top: 35%;
@@ -27,9 +27,10 @@ body {
     font-size: 1.5vw;
     text-decoration: none;
     position: absolute;
-    top: 70%;
+    top: 80%;
     left: 25%;
     width: 20%;
+    height: 100px;
     transform: translate(-50%, -50%);
 }
 
@@ -37,12 +38,14 @@ body {
     background-color: #eb4a00;
     border-radius: 15px;
     text-align: center;
+    line-height: inherit;
     font-size: 1.5vw;
     text-decoration: none;
     position: absolute;
-    top: 70%;
+    top: 80%;
     left: 50%;
     width: 20%;
+    height: 100px;
     transform: translate(-50%, -50%);
 }
 
@@ -53,9 +56,10 @@ body {
     font-size: 1.5vw;
     text-decoration: none;
     position: absolute;
-    top: 70%;
+    top: 80%;
     left: 75%;
     width: 20%;
+    height: 100px;
     transform: translate(-50%, -50%);
 }
 
