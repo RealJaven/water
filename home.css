@@ -8,6 +8,7 @@ body {
 }
 
 .box {
+    border: none;
     background-color: rgba(230,71,39,.95);
     width: 50%;
     height: auto;
@@ -20,7 +21,7 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.button1 {
+button {
     background-color: #eb4a00;
     border-radius: 15px;
     text-align: center;
@@ -28,52 +29,34 @@ body {
     text-decoration: none;
     position: absolute;
     top: 70%;
-    left: 25%;
     width: 20%;
-    height: 100px;
+    height: 130px;
     transform: translate(-50%, -50%);
+}
+
+.button1 {
+    left: 25%;
 }
 
 .button2 {
-    background-color: #eb4a00;
-    border-radius: 15px;
-    text-align: center;
-    line-height: inherit;
-    font-size: 1.5vw;
-    text-decoration: none;
-    position: absolute;
-    top: 70%;
     left: 50%;
-    width: 20%;
-    height: 100px;
-    transform: translate(-50%, -50%);
 }
 
 .button3 {
-    background-color: #eb4a00;
-    border-radius: 15px;
-    text-align: center;
-    font-size: 1.5vw;
-    text-decoration: none;
-    position: absolute;
-    top: 70%;
     left: 75%;
-    width: 20%;
-    height: 100px;
-    transform: translate(-50%, -50%);
 }
 
-.button1:hover {
+.button1:hover{
     cursor: pointer;
     background: #ffc107;
 }
 
-.button2:hover {
+.button2:hover{
     cursor: pointer;
     background: #ffc107;
 }
 
-.button3:hover {
+.button3:hover{
     cursor: pointer;
     background: #ffc107;
 }
